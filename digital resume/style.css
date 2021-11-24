@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(250, 250, 240);
+   
+}
+
+header {
+    display: flex;
+    margin: 1rem 2rem 0rem 2rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url("https://techcrunch.com/wp-content/uploads/2017/05/gettyimages-580833893.jpg?w=1390&crop=1");
+    
+    background-position:bottom;
+    box-shadow: 1px 1px 6px 3px #070035;
+}
+
+#logo {
+    width: 6.5rem;
+    height: auto;
+    margin: 1rem;
+    box-shadow: 5px 10px 20px rgb(238, 238, 238) ;
+}
+
+
+nav ul li {
+    display: inline-block;
+    color: ivory;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    margin: 3rem 1.5rem 1rem 1.5rem;
+    padding: 0.5rem;
+    box-shadow: 5px 1px 20px rgb(238, 238, 238) ;
+    background-color: rgb(1, 33, 44);
+    transition: 0.6s ease all;
+    
+}
+nav ul li:hover {
+    color: rgb(1, 33, 44);
+    background-color: rgb(195, 195, 195);
+    
+}
+
+nav ul li a {
+    color: ivory;
+    padding: 0.5rem;
+    text-decoration: none;
+    
+    
+}
+nav ul li:hover a{
+    color: rgb(1, 33, 44);
+    font-weight: bold;
+    
+}
+
+
+#about {
+    margin: 2rem 3rem 3rem 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+  
+}
+
+#me {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin: 1rem 0rem;
+    padding: 0 2rem;
+    width: 28rem;
+    border-right: 4px solid rgb(9, 28, 92);
+    border-left: 4px solid rgb(9, 28, 92);
+}
+
+#me h1 {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(3, 52, 102);
+}
+
+
+
+
+
+#p-div {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1rem;
+    width: 18rem;
+    height: 18rem;
+    box-shadow: 1px 1px 6px 3px #070035;
+    border-radius: 40%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    
+}
+
+#p-div img {
+    width: 100%;
+    height: 100%;  
+    transition: 0.6s all ease;  
+    
+}
+
+#me img:hover {
+    transform: scale(1.3);
+  
+}
+
+#me h2 {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(85, 139, 192);
+    font-size: 1.2rem;
+    margin: 0.5rem ;
+}
+
+#me h3 {
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(8, 8, 8);
+    font-size: 0.9rem;
+    margin: 0.5rem ;
+}
+
+#me h4 {
+    margin: 0.1rem ;
+}
+
+#ships_h4 {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+    text-decoration: underline;
+}
+.ships {
+    width: 40rem;
+    height: 30rem;
+    display: grid;
+    margin-right: 4rem;
+    grid-template-columns: repeat(5,9rem);
+    grid-template-rows:  repeat(5,7rem);
+    
+    
+}
+
+.ship {
+margin: 2rem;
+border-radius: 6px;
+box-shadow: 1px 1px 6px 3px #070035;
+transition: 0.5s all ease;
+
+}
+
+.ship p {
+    display: none;
+    margin: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    
+}
+
+
+.ship:hover {
+    transform: scale(1.1);
+}
+
+.invisible {
+    transition: all .5s ease-in-out;
+    transition-delay: .3s ease-in-out;
+}
+
+.ship:hover .invisible {
+    display: block;
+} 
+
+#small {
+ 
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+#small img {
+    width: 100%;
+   height: 100%;
+}
+#seyrusefa {
+    
+    grid-column: span 3;
+    grid-row: span 2;
+}
+#seyrusefa img {
+    width: 100%;
+    height: 100%;
+}
+#rondvaartboot {
+   
+    grid-column: span 3;
+    grid-row: span 3;
+}
+#rondvaartboot img{
+    width: 100%;
+    height: auto;
+}
+
+#big {
+    
+    grid-column: span 2;
+    grid-row: span 2;
+    
+}
+
+#big img{
+width: 100%;
+object-fit: contain;
+}
+
+#big p {
+    margin-top: 1.5rem;
+}
+
+#education {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#education h2{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(3, 52, 102);
+    margin-bottom: 2rem;
+}
+
+.education {
+    display: flex;
+    justify-content: space-around;
+}
+
+#education .image,
+#experience .image{
+    height: 12rem;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 1px 1px 6px 3px #070035;
+    border-radius: 6px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+
+#education ul {
+    margin: 0 4rem;    
+    list-style: none;
+}
+
+#education ul li,
+#experience ul li{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    background-color: rgb(228, 228, 228);
+    border-radius: 1rem;
+    
+}
+
+#experience {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#experience h2{
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(3, 52, 102);
+    margin-bottom: 2rem;
+}
+
+.experience {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+#experience .image{
+    width: 35%;
+}
+
+
+#experience ul {
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+footer{
+	margin-top: 3rem; 
+	background-color: #2C3E50;
+	color: #fff;
+	text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-header {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#address p {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.icons-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    list-style: none;
+}
+
+.icon a {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0.7rem;
+    color: ivory;
+    box-shadow:-1px -1px 15px -7px ivory;
+    transition: 0.3s all ease;
+    
+}
+
+.icon:hover a{
+color: rgb(0, 108, 209);
+}
+
+#email h4 {
+    margin-bottom: 1rem;
+}
+
+#email h5 {
+    margin: 0.5rem;
+}
+
+.copyright {
+    padding: 1.2rem;
+	background-color: #1A252F;
+	color: #fff;
+	text-align: center;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+    html {
+        font-size: 13px;
+    }
+   
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
+    nav ul {
+        margin: 0.5rem 0rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0.2rem;
+        margin-right: 1rem;
+    }
+
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #me {
+        margin-bottom: 2rem;
+        
+    }
+
+    .ships {
+        margin-bottom: 2rem;
+    }
+
+    .education {
+        flex-direction: column;
+    }
+
+    #education .image {
+        margin-bottom: 2rem;
+    }
+
+    .experience {
+        flex-direction: column;
+    }
+
+    #experience .image {
+        margin-bottom: 2rem;
+    }
+
+    
+
+@media (max-width: 576px) {
+    html {
+        font-size: 10px; 
+    }
+}

@@ -1,0 +1,6 @@
+1- To be able to create a folder it is used “mkdir <foldername>”;  to create a file “touch <filename>”. When one needs to create a hidden file, it is just enough to put “.” before <foldername>/<filename>. For instance “mkdir .hackyourfuture” or “touch .READ_ME.txt”. To be able to display a hidden folder or file it is just enough to use “ls -a” inside the parent folder.
+
+2- To be able to create a nested directory in CLI, it can be used “mkdir -p folder/folder”. when it comes to create multiple nested directories it is enough to make a space between different nested folders just like “mkdir -p folder1/subfolder folder2/subfolder”. 
+
+3- echo “first message” >> cli_challange.txt (First command)
+echo -n “second message” >> cli_challange.txt (Second command)
